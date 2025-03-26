@@ -2,38 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What does each node use to estimate the shortest path to a destination?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "IP address of the destination",
+        "b": "Routing table of the entire network",
+        "c": "Distance vector received from neighbors",
+        "d": "MAC addresses of all network devices"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the main challenge of the Distance Vector Algorithm?",
+      "answers": {
+        "a": "High bandwidth consumption",
+        "b": "Slow convergence and count-to-infinity problem",
+        "c": "Incompatibility with IP addresses",
+        "d": "Requirement for a central router"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What triggers a node to send its updated distance vector to neighbors?",
+      "answers": {
+        "a": "A periodic timer expires",
+        "b": "It receives an updated distance vector from a neighbor and its own vector changes",
+        "c": "It receives a data packet from another node",
+        "d": "A new device connects to the network"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },    
+    {
+      "question": "What mechanism helps reduce the Count-to-Infinity problem?",
+      "answers": {
+        "a": "Hop count limit",
+        "b": "Subnetting",
+        "c": "Increasing update intervals",
+        "d": "Switching to Link-State Routing"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How does a node decide which neighbor to use for forwarding packets?",
+      "answers": {
+        "a": "It selects the neighbor with the lowest cost in its distance vector",
+        "b": "It randomly selects a neighbor",
+        "c": "It forwards packets to all neighbors",
+        "d": "It always forwards packets to the central router"
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
-  ]
+  ]  
 }
