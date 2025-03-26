@@ -19,7 +19,7 @@
   - `Dᵥ(y)`: Neighbor `v`'s cost to destination `y`
 - If a node's distance vector changes after an update, it propagates the updated vector to its neighbors.
 
-<img src="images/process.svg">
+<img src="images/process.svg" style="max-width: 350px; width: 100%;">
 
 ## Characteristics of Distance Vector Routing
 - **Distributed and Asynchronous:** Nodes update independently without centralized control.
