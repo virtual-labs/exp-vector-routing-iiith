@@ -192,7 +192,7 @@ function p4_validateTable1() {
   const correct4 = validate('p4_2','B', newValueB, newAnswerB);
   const correct5 = correct1 && correct2 && correct3 && correct4;
   setTimeout(function () {
-    if (correct5) alert("Great! Please proceed to next page");
+    if (correct5) alert("Great! Excercise completed");
   }, 600);
 }
 function p3_validate() {

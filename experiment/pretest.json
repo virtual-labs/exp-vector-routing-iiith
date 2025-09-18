@@ -2,59 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What does each node use to estimate the shortest path to a destination?",
+      "question": "What is the primary function of the Distance Vector (DV) routing algorithm?",
       "answers": {
-        "a": "IP address of the destination",
-        "b": "Routing table of the entire network",
-        "c": "Distance vector received from neighbors",
-        "d": "MAC addresses of all network devices"
+        "a": "To encrypt network traffic.",
+        "b": "To compute shortest paths in a network.",
+        "c": "To assign IP addresses to devices.",
+        "d": "To manage physical network connections."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following describes a key characteristic of the Distance Vector algorithm?",
+      "answers": {
+        "a": "It requires a central server for all calculations.",
+        "b": "It is a synchronous and centralized algorithm.",
+        "c": "It is an iterative and distributed algorithm.",
+        "d": "It focuses on creating a single, static route."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "What is the main challenge of the Distance Vector Algorithm?",
+      "question": "What information does a node send to its neighbors during the DV update process?",
       "answers": {
-        "a": "High bandwidth consumption",
-        "b": "Slow convergence and count-to-infinity problem",
-        "c": "Incompatibility with IP addresses",
-        "d": "Requirement for a central router"
+        "a": "Its entire routing table, including host information.",
+        "b": "Only the cost to its directly connected neighbors.",
+        "c": "Its own distance vector, which contains cost estimates to all destinations.",
+        "d": "A list of all other nodes in the network."
       },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "What triggers a node to send its updated distance vector to neighbors?",
-      "answers": {
-        "a": "A periodic timer expires",
-        "b": "It receives an updated distance vector from a neighbor and its own vector changes",
-        "c": "It receives a data packet from another node",
-        "d": "A new device connects to the network"
-      },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
-    },    
-    {
-      "question": "What mechanism helps reduce the Count-to-Infinity problem?",
-      "answers": {
-        "a": "Hop count limit",
-        "b": "Subnetting",
-        "c": "Increasing update intervals",
-        "d": "Switching to Link-State Routing"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "intermediate"
     },
     {
-      "question": "How does a node decide which neighbor to use for forwarding packets?",
+      "question": "What is the purpose of the Bellman-Ford equation in the context of DV routing?",
       "answers": {
-        "a": "It selects the neighbor with the lowest cost in its distance vector",
-        "b": "It randomly selects a neighbor",
-        "c": "It forwards packets to all neighbors",
-        "d": "It always forwards packets to the central router"
+        "a": "To calculate the total number of hops to a destination.",
+        "b": "To find the cheapest path by considering neighbor costs and their distance vectors.",
+        "c": "To determine the physical location of a router.",
+        "d": "To encrypt the distance vector before sending it."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In the Bellman-Ford equation, `Dₓ(y) = minᵥ {c(x, v) + Dᵥ(y)}`, what does `c(x, v)` represent?",
+      "answers": {
+        "a": "The cost from a neighbor 'v' to destination 'y'.",
+        "b": "The cost to a directly connected neighbor 'v' from node 'x'.",
+        "c": "The minimum cost from node 'x' to destination 'y'.",
+        "d": "The cost of the entire path to destination 'y'."
+      },
+      "correctAnswer": "b",
       "difficulty": "advanced"
     }
-  ]  
+  ]
 }

@@ -25,7 +25,3 @@
 - **Distributed and Asynchronous:** Nodes update independently without centralized control.
 - **Iterative Process:** Updates continue until all nodes have the best possible routes.
 - **Slow Convergence:** The algorithm may take time to stabilize after network topology changes.
-
-### Reference Books
-1. Kurose, J. F., & Ross, K. W. *Computer Networking: A Top-Down Approach*. Pearson.
-2. Tanenbaum, A. S., & Wetherall, D. J. *Computer Networks*. Pearson.
